@@ -1,0 +1,25 @@
+{
+  "name": "vivremuebles",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hola 👋, Soy Rocío Fernández</h1>\r <h3 align=\"center\">Mi proyecto es Vivre Muebles ♥</h3>\r <p align=\"center\">Nos dedicamos a la venta mayorista y minorista de mobiliario y decoración. </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/newstyles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rociofernandezm/proyecto_coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rociofernandezm/proyecto_coderhouse/issues"
+  },
+  "homepage": "https://github.com/rociofernandezm/proyecto_coderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -29,6 +29,11 @@
     border: transparent solid 1px;
     border-radius: 30px;
 }
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
 a{
     text-decoration: none;
 }
