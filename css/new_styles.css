@@ -68,8 +68,11 @@ a{
     font-size: 24px;
     text-align: center;
     color: rgb(121, 111, 103);
-    font-weight: 600;
-    
+    font-weight: 600;    
+}
+.animate__pulse{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .card_p{
     font-family: montserrat;
@@ -179,18 +182,6 @@ footer ul li{
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.carousel-caption{
-    align-items: center;
-    justify-content: center;
-    animation-name: movimiento;
-    animation-duration: 2s;
-    animation-iteration-count: hover;
-    animation-timing-function: ease;
-}
-.carousel-caption:hover{
-    transform: scale(105%);
-}
-
 .titulo_ppal_paginassec{
     font-family: montserrat;
     font-weight: 500;
