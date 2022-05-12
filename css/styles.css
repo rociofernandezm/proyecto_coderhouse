@@ -110,48 +110,49 @@
   font-family: montserrat;
   src: url("https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700; 1,800;1,900 & mostrar=cambiar"); }
 
-.navbar {
+.navbar, footer div {
   font-family: montserrat;
-  justify-content: center;
-  align-items: center; }
-  .navbar img {
+  font-weight: 500;
+  font-size: 16; }
+  .navbar img, footer div img {
     width: 110px;
     height: 45px; }
 
 .titulo_ppal_index {
   font-family: montserrat;
-  font-weight: 500;
   text-align: center;
-  font-size: 30px;
-  color: black;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: 30px;
   margin-top: 30px; }
 
 .titulos_ppales_index {
   font-family: montserrat;
-  font-weight: normal;
   text-align: center;
-  font-size: 28px;
-  color: black;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-weight: normal;
+  font-size: 28px;
+  color: #796f67; }
 
 .subtitulos_ppales_index {
+  font-family: montserrat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: auto;
   font-family: montserrat;
   font-weight: normal;
-  text-align: center;
   font-size: 17px;
-  color: #796f67;
-  justify-content: center;
-  align-items: center; }
+  color: black; }
 
 .btn {
   background-color: #e8e8e8;
   color: black;
   font-family: montserrat;
+  font-size: 15px;
   font-weight: normal;
   border: transparent solid 1px;
   border-radius: 30px; }
@@ -172,26 +173,20 @@
   margin-top: 10px;
   background-color: white; }
   .card:hover {
-    transform: scale(105%); }
+    transform: scale(102%); }
   .card .card-title {
     font-size: 18px;
     color: black;
     font-weight: 600; }
-  .card .card_categorias_borde {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 15px;
-    margin-top: 15px; }
 
 .entrega_inmediata {
   font-family: montserrat;
-  width: 100%;
   height: 400px;
   background-image: linear-gradient(to top, #c5c5c5, #f1f1f1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 80px; }
+  align-items: center; }
   .entrega_inmediata .iframe_home {
     width: 50%;
     align-items: center;
@@ -199,39 +194,50 @@
     margin-left: 20px; }
 
 .outlet {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 50px; }
   .outlet img {
     opacity: 80%; }
   .outlet .titulo_outlet {
     font-family: montserrat;
-    font-weight: 500;
     font-size: 25px;
     color: white; }
   .outlet .subtitulo_outlet {
     font-family: montserrat;
-    font-weight: 500;
     font-size: 18px;
     color: white; }
   .outlet .animate__pulse {
     animation-duration: 2s;
     animation-iteration-count: infinite; }
+  .outlet .btn_outlet {
+    color: black;
+    background-color: #e8e8e8;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center; }
+    .outlet .btn_outlet:hover {
+      background-color: black;
+      color: white; }
+
+.redes_sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around; }
 
 footer {
   background-color: #f1f1f1;
-  width: 100%;
   padding-top: 1%;
-  padding-bottom: 1%;
-  margin-top: 50px;
-  margin-bottom: auto; }
+  padding-bottom: 1%; }
   footer div {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 12px; }
     footer div a {
@@ -247,5 +253,38 @@ footer {
       justify-content: center;
       align-items: center; }
     footer div ul li {
-      list-style: none;
-      color: #cc1414; }
+      list-style: none; }
+      footer div ul li:hover {
+        text-decoration: underline; }
+
+.btn--facebook {
+  background-color: #7f9edb;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+  width: 100px; }
+  .btn--facebook:hover {
+    background-color: white;
+    color: black; }
+
+.btn--instagram {
+  background-color: #e600ff;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+  width: 100px; }
+  .btn--instagram:hover {
+    background-color: white;
+    color: black; }

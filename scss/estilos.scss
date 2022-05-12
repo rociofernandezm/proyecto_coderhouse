@@ -7,50 +7,48 @@
 font-family: montserrat;
 src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700; 1,800;1,900 & mostrar=cambiar');
 }
-.navbar{
+
+@mixin titulos__ppales {
     font-family: montserrat;
+    text-align: center;
     justify-content: center;
     align-items: center;
+}
+.navbar{
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 16;
     img{
         width: 110px;
         height: 45px;
-}
+    }
 }
 .titulo_ppal_index{
-    font-family: montserrat;
+    @include titulos__ppales;
     font-weight: 500;
-    text-align: center;
     font-size: 30px;
-    color:rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
     margin-top:30px;
 }
 .titulos_ppales_index{
-    font-family: montserrat;
+    @include titulos__ppales;
     font-weight: normal;
-    text-align: center;
     font-size: 28px;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    
+    color:rgb(121, 111, 103);
 }
 .subtitulos_ppales_index{
+    @include titulos__ppales;
     width: 80%;
     margin: auto;
     font-family: montserrat;
     font-weight: normal;
-    text-align: center;
     font-size: 17px;
-    color:rgb(121, 111, 103);
-    justify-content: center;
-    align-items: center;
+    color:rgb(0, 0, 0);
 }
 .btn{
     background-color: rgb(232, 232, 232);
     color: black;
     font-family: montserrat;
+    font-size: 15px;
     font-weight: normal;
     border: transparent solid 1px;
     border-radius: 30px;
@@ -72,29 +70,23 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
     margin-top: 10px;
     background-color: white;    
     &:hover{
-        transform: scale(105%);
+        transform: scale(102%);
     }
     .card-title{
         font-size: 18px;
         color:rgb(0, 0, 0);
         font-weight: 600;
     }
-    .card_categorias_borde{
-        border: 1px solid rgb(241, 241, 241);;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
 }
 .entrega_inmediata{
     font-family: montserrat;
-    width: 100%;
     height: 400px;
     background-image: linear-gradient(to top, rgb(197, 197, 197), rgb(241, 241, 241));
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+
     .iframe_home{
         width: 50%;
         align-items: center;
@@ -103,23 +95,17 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
         }
 }
 .outlet{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     img{
         opacity: 80%;
     }
     .titulo_outlet{
         font-family: montserrat;
-        font-weight: 500;
         font-size: 25px;
         color: rgb(255, 255, 255);
     }
     .subtitulo_outlet{
         font-family: montserrat;
-        font-weight: 500;
         font-size: 18px;
         color: rgb(255, 255, 255);
     }
@@ -127,20 +113,39 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
         animation-duration: 2s;
         animation-iteration-count: infinite;
     }
+    .btn_outlet{
+        color: rgb(0, 0, 0);
+        background-color: rgb(232, 232, 232);
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        height: 30px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: black;
+            color: white;}
+    }
+}
+.redes_sociales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
 footer{
     background-color:rgb(241, 241, 241);
-    width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin-top: 50px;
-    margin-bottom: auto;
     div{
-        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
+        @extend .navbar;
         font-size: 12px;
         a{
             text-decoration: none;
@@ -158,7 +163,34 @@ footer{
         }
         ul li{
             list-style: none;
-            color: rgb(204, 20, 20);
+            &:hover{
+                text-decoration: underline;
+
+            }
         }
     }
 }
+$redesociales:(
+    facebook:#7f9edb,
+    instagram: #e600ff,
+);
+@each $red, $color in $redesociales{
+    .btn--#{$red}{
+        background-color: $color;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 30px;
+        width: 100px;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }     
+    }
+}
+
