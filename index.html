@@ -18,7 +18,8 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
 <!-- ACÁ EMPIEZA EL BODY -->
-<body class="container-fluid">
+<body>
+    <div class="container-fluid">
     <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -99,14 +100,14 @@
     <!-- categorias -->
     <div class="mt-2 row" class="card-group">
         <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="shadow-sm p-3 mb-5 bg-white rounded card card_categorias_borde">
+        <div class="shadow-sm p-3 mb-4 bg-white rounded card card_categorias_borde">
         <a href="./paginas/sillasdecomedor.html">
             <img src="./imagenes/sillas.jpg" class="card-img-top" alt="...">
         </a>
         </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="shadow-sm p-3 mb-5 bg-white rounded card card_categorias_borde">
+            <div class="shadow-sm p-3 mb-4 bg-white rounded card card_categorias_borde">
             <a href="./paginas/sillasdecomedor.html">
                 <img src="./imagenes/mesas.jpg" class="card-img-top" alt="...">
             </a>
@@ -128,7 +129,7 @@
         </div>
     </div>
 <!-- nuevos -->
-    <div class="mt-4">
+    <div class="mt-4 mb-4">
         <h2 class="titulos_ppales_index">NUEVOS INGRESOS</h2>
         <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -175,7 +176,7 @@
     </div>
 <!-- entrega -->
     <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 ">
+    <div class="mt-1 mb-3 col-lg-12 col-md-12 col-sm-1">
         <div class="entrega_inmediata container-fluid">
         <div>
         <h2 class="titulos_ppales_index .entrega_titulo">ENTREGA INMEDIATA</h2>
@@ -186,24 +187,28 @@
         </div>
     </div>
 <!-- outlet -->
-    <div class="mt-5 row outlet">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="row outlet">
+        <div class="mt-5 mb-3 col-lg-12 col-md-12 col-sm-12 ">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <img src="./imagenes/fotonueva1.jpg" class="d-block w-100 .img-fluid" alt="...">
                 <div class="carousel-caption texto_outlet animate__animated animate__pulse">
-                    <h5 class="titulo_outlet" >OUTLET VIVRE</h5>
-                    <p class="subtitulo_outlet">Productos seleccionados de Outlet. Fallas, remanentes y discontinuos.</p>
-                    <a href="./paginas/outlet.html" class="btn btn-primary btn_outlet">VER MÁS</a>
+                    <h5 class="mb-3 titulo_outlet">OUTLET VIVRE</h5>
+                    <a href="./paginas/outlet.html" class="mb-2 btn btn-primary btn_outlet">VER MÁS</a>
                 </div>
             </div>
         </div>
         </div>
 </div> 
-<div class="mb-5 redes_sociales">
+<!-- redes -->
+<div>
+    <div class="mt-5 mb-5 row">
+    <div class="col-lg-12 col-md-12 col-sm-6 redes_sociales">
     <h5 class="titulos_ppales_index">¡SEGUINOS!</h5>
     <h5><a class="texto_footer btn btn-primary btn--facebook" href="https://www.facebook.com">Facebook</h5></a>
     <h5><a class="texto_footer btn btn-primary btn--instagram" href="https://www.instagram.com">Instagram</h5></a>
+</div>
+</div>
 </div>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
