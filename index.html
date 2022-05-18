@@ -99,6 +99,13 @@
     <h1 class="titulo_ppal_index">MUEBLES DE DISEÑO</h1>
     <!-- categorias -->
     <div class="mt-2 row" class="card-group">
+        <div>
+            <div class="col-lg-12 col-md-6 col-sm-6">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            </div>
+        </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="shadow-sm p-3 mb-4 bg-white rounded card card_categorias_borde">
         <a href="./paginas/sillasdecomedor.html">
@@ -176,10 +183,10 @@
     </div>
 <!-- entrega -->
     <div class="row">
-    <div class="mt-1 mb-3 col-lg-12 col-md-12 col-sm-1">
+    <div class="mt-1 mb-5 col-lg-12 col-md-12 col-sm-12">
         <div class="entrega_inmediata container-fluid">
         <div>
-        <h2 class="titulos_ppales_index .entrega_titulo">ENTREGA INMEDIATA</h2>
+        <h2 class="titulos_ppales_index">ENTREGA INMEDIATA</h2>
         <p class="subtitulos_ppales_index">Más de 200 artículos en stock disponible para entrega inmediata. Sin demora de fabricación!</p>
     </div>
     <iframe class="iframe_home" width="560" height="315" src="https://www.youtube.com/embed/QPbSUtwdDfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -187,28 +194,68 @@
         </div>
     </div>
 <!-- outlet -->
-    <div class="row outlet">
-        <div class="mt-5 mb-3 col-lg-12 col-md-12 col-sm-12 ">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div class="row">
+    <div class="mt-4 mb-5 col-lg-12 col-md-12 col-sm-12 outlet">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
-                <img src="./imagenes/fotonueva1.jpg" class="d-block w-100 .img-fluid" alt="...">
-                <div class="carousel-caption texto_outlet animate__animated animate__pulse">
-                    <h5 class="mb-3 titulo_outlet">OUTLET VIVRE</h5>
-                    <a href="./paginas/outlet.html" class="mb-2 btn btn-primary btn_outlet">VER MÁS</a>
+            <div class="carousel-item active">
+                <a href="paginas/outlet.html">
+                <img src="imagenes/fotonueva1.jpg" class="d-block w-100" alt="...">
+                <div class="mt-4 carousel-caption d-block d-md-block d-sm-block">
+                    <div class="animate__animated animate__pulse">
+                <h5 class="titulo_outlet">OUTLET VIVRE</h5>
+                <button class="btn btn_outlet">VER MÁS</button>
+                </a>
+                </div>
                 </div>
             </div>
         </div>
+    </div>            
+</div>
+<!-- newsletter -->
+<div>
+    <div class="row">
+    <div class="mt-2 mb-4 col-lg-12 col-md-12 col-sm-12">
+    <button type="button" class="btn btn_news" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+        <h5>¡SUSCRIBITE Y OBTENÉ <strong>10% DE DESCUENTO</strong> EN TU PRIMERA COMPRA!</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title subtitulo_consultas_contacto" id="exampleModalLabel">Suscribite a nuestro newsletter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                <label for="recipient-name" class="col-form-label subtitulo_consultas_contacto_2">Nombre</label>
+                <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label subtitulo_consultas_contacto_2">Email</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                    </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            </div>
         </div>
-</div> 
+        </div>
+    </div>
+    </div>
+</div>
+</div>
 <!-- redes -->
 <div>
-    <div class="mt-5 mb-5 row">
-    <div class="col-lg-12 col-md-12 col-sm-6 redes_sociales">
-    <h5 class="titulos_ppales_index">¡SEGUINOS!</h5>
+    <div class="mt-4 mb-5 row">
+    <div class="col-lg-12 col-md-12 col-sm-12 redes_sociales">
+    <h5 class="subtitulos_ppales_index_2">¡SEGUINOS!</h5>
     <h5><a class="texto_footer btn btn-primary btn--facebook" href="https://www.facebook.com">Facebook</h5></a>
-    <h5><a class="texto_footer btn btn-primary btn--instagram" href="https://www.instagram.com">Instagram</h5></a>
-</div>
-</div>
+    <h5><a class="texto_footer btn btn-primary btn--instagram" href="https://www.instagram.com">Instagram</a></h5>
+    </div>
+    </div>
 </div>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

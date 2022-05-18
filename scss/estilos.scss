@@ -40,12 +40,17 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
 }
 .subtitulos_ppales_index{
     @include titulos__ppales;
-    width: 80%;
     margin: auto;
     font-family: montserrat;
     font-weight: normal;
     font-size: 17px;
     color:rgb(0, 0, 0);
+}
+.subtitulos_ppales_index_2{
+@include titulos__ppales;
+font-family: montserrat;
+font-size: 20px;
+font-weight: 600;
 }
 .btn{
     background-color: rgb(232, 232, 232);
@@ -58,6 +63,23 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
     &:hover{
         background-color: black;
         color: white;
+    }
+}
+.btn_news{
+    background-color: rgb(53, 53, 53);
+    color:  rgb(241, 241, 241);
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    font-family: montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0px;
+    line-height: normal;
+    &:hover{
+        background-color: rgb(232, 232, 232);
+        color:  rgb(53, 53, 53);
     }
 }
 .card{
@@ -89,7 +111,6 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
     flex-direction:row;
     justify-content: center;
     align-items: center;
-
     .iframe_home{
         width: 50%;
         align-items: center;
@@ -105,11 +126,15 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
     }
     .titulo_outlet{
         font-family: montserrat;
-        font-size: 24px;
+        font-size: 28px;
+        text-align: center;
         color: rgb(255, 255, 255);
         margin-bottom: 10px;
         justify-content: center;
         align-items: center;
+    }
+    a{
+        text-decoration: none;
     }
     .animate__pulse{
         animation-duration: 2s;
@@ -122,9 +147,8 @@ src: url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,300;
         font-size: 14px;
         font-weight: normal;
         text-align: center;
-        height: 30px;
+        height: 35px;
         width: 100px;
-
         justify-content: center;
         align-items: center;
         &:hover{
@@ -193,8 +217,6 @@ $redesociales:(
         color: white;
         font-size: 12px;
         font-weight: bold;
-        display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;

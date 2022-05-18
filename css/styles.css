@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: row; }
 
+.form_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
 .titulo_consultas_contacto {
   list-style: none;
   font-family: montserrat;
@@ -143,12 +149,20 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 80%;
   margin: auto;
   font-family: montserrat;
   font-weight: normal;
   font-size: 17px;
   color: black; }
+
+.subtitulos_ppales_index_2 {
+  font-family: montserrat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 600; }
 
 .btn {
   background-color: #e8e8e8;
@@ -161,6 +175,22 @@
   .btn:hover {
     background-color: black;
     color: white; }
+
+.btn_news {
+  background-color: #353535;
+  color: #f1f1f1;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  font-family: montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0px;
+  line-height: normal; }
+  .btn_news:hover {
+    background-color: #e8e8e8;
+    color: #353535; }
 
 .card {
   font-family: montserrat;
@@ -202,11 +232,14 @@
     opacity: 80%; }
   .outlet .titulo_outlet {
     font-family: montserrat;
-    font-size: 24px;
+    font-size: 28px;
+    text-align: center;
     color: white;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center; }
+  .outlet a {
+    text-decoration: none; }
   .outlet .animate__pulse {
     animation-duration: 2s;
     animation-iteration-count: infinite; }
@@ -217,7 +250,7 @@
     font-size: 14px;
     font-weight: normal;
     text-align: center;
-    height: 30px;
+    height: 35px;
     width: 100px;
     justify-content: center;
     align-items: center; }
@@ -275,8 +308,6 @@ footer {
   color: white;
   font-size: 12px;
   font-weight: bold;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -291,8 +322,6 @@ footer {
   color: white;
   font-size: 12px;
   font-weight: bold;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
