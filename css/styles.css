@@ -244,8 +244,8 @@
     animation-duration: 2s;
     animation-iteration-count: infinite; }
   .outlet .btn_outlet {
-    color: black;
-    background-color: #e8e8e8;
+    color: #e8e8e8;
+    background-color: #353535;
     font-family: montserrat;
     font-size: 14px;
     font-weight: normal;
