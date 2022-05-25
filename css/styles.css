@@ -5,10 +5,8 @@
   display: flex;
   flex-direction: row; }
 
-.form_form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.principal_contacto {
+  justify-content: center;
   align-items: center; }
 
 .titulo_consultas_contacto {
@@ -68,22 +66,15 @@
 .card_pOutlet:hover {
   transform: scale(103%); }
 
-.img_producto_detalle {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
 .card-title_producto_detalle {
   list-style: none;
   font-family: montserrat;
-  font-size: 30px;
+  font-size: 28px;
   text-align: left;
-  line-height: 30px;
+  line-height: 18px;
   font-weight: 500;
   color: #796f67;
-  justify-content: center;
+  justify-content: left;
   align-items: center; }
 
 .card_text_producto_detalle ul {
@@ -91,26 +82,34 @@
   font-family: montserrat;
   font-size: 14px;
   font-weight: normal;
-  line-height: 15px;
-  text-align: left; }
+  line-height: 11px;
+  text-align: left;
+  align-items: center;
+  justify-content: center; }
+
+.card_prod_det {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .subtitulos_producto_detalle {
   list-style: none;
   font-family: montserrat;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
-  line-height: 30px;
+  line-height: 28px;
   color: black; }
 
 .imagen_producto_detalle {
   width: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center; }
 
 .form-select_prod_det {
-  width: 200px;
-  margin-top: -1px; }
+  width: 130px; }
 
 @font-face {
   font-family: montserrat;
@@ -192,13 +191,38 @@
     background-color: #e8e8e8;
     color: #353535; }
 
+.btn_prod_det {
+  background-color: white;
+  color: red;
+  border: red solid 1px;
+  border-radius: 0%;
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 26px;
+  width: 148px;
+  text-decoration: none; }
+  .btn_prod_det:hover {
+    background-color: red;
+    border: 1px white solid; }
+
+.dropdown-menu {
+  height: 10px;
+  width: 10px;
+  border: 0px transparent solid;
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 11px;
+  background-color: transparent; }
+
 .card {
   font-family: montserrat;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 17px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 5px;
   color: black;
   font-weight: 700;
   margin-bottom: 80px;
@@ -207,7 +231,7 @@
   .card:hover {
     transform: scale(102%); }
   .card .card-title {
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     font-weight: 600; }
 
@@ -244,8 +268,8 @@
     animation-duration: 2s;
     animation-iteration-count: infinite; }
   .outlet .btn_outlet {
-    color: #e8e8e8;
-    background-color: #353535;
+    background-color: white;
+    color: black;
     font-family: montserrat;
     font-size: 14px;
     font-weight: normal;
@@ -255,8 +279,8 @@
     justify-content: center;
     align-items: center; }
     .outlet .btn_outlet:hover {
-      background-color: black;
-      color: white; }
+      color: white;
+      background-color: black; }
 
 .breadcrumb_texto {
   font-family: montserrat;
